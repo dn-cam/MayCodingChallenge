@@ -18,10 +18,10 @@
 
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
-        if(magazine.length() < ransomNote.length())
-            return false;
         if(ransomNote.length() == 0)
             return true;
+        if(magazine.length() < ransomNote.length())
+            return false;
         
         int i = 0;
         String[] ransom = ransomNote.split("");
