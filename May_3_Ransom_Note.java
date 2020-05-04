@@ -9,7 +9,8 @@
  * You may assume that both strings contain only lowercase letters.
  */
 
-/* 
+
+/* Examples: 
  * canConstruct("a", "b") -> false
  * canConstruct("aa", "ab") -> false
  * canConstruct("aa", "aab") -> true
@@ -32,6 +33,7 @@ class Solution {
             else magazine = magazine.replaceFirst(ransom[i], "");
             i++;
         }
+
         if(i == ransom.length && magazine.length() >= 0)
             return true;
         else if(i < ransom.length-1 && magazine.length() == 0)
